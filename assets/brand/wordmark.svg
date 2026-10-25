@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 96" role="img" aria-label="bulkhead">
+  <g fill="#0A1628" font-family="'Space Grotesk', 'Inter', system-ui, sans-serif" font-weight="600">
+    <text x="0" y="62" font-size="52" letter-spacing="-0.5">bulkhead</text>
+  </g>
+  <rect x="430" y="44" width="8" height="36" rx="2" fill="#2EC4B6"/>
+  <line x1="430" y1="62" x2="620" y2="62" stroke="#2EC4B6" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+</svg>

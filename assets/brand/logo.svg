@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Bulkhead">
+  <rect width="240" height="240" rx="48" fill="#0A1628"/>
+  <!-- waterline (policy boundary) -->
+  <line x1="40" y1="128" x2="200" y2="128" stroke="#2EC4B6" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+  <!-- hull, above and below the waterline -->
+  <path d="M48 128 L84 76 L156 76 L192 128 L168 172 L72 172 Z" fill="#F4F7FB"/>
+  <!-- bulkheads: the watertight walls dividing the hull -->
+  <rect x="86" y="76" width="8" height="96" rx="2" fill="#2EC4B6"/>
+  <rect x="146" y="76" width="8" height="96" rx="2" fill="#2EC4B6"/>
+</svg>

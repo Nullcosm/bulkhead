@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "deny-prod-writes",
+      "effect": "deny",
+      "tools": ["db.*"],
+      "agents": [],
+      "condition": { "field": "resource", "op": "prefix", "value": "prod" }
+    },
+    {
+      "id": "allow-staging-writes",
+      "effect": "allow",
+      "tools": ["db.*"],
+      "agents": [],
+      "condition": { "field": "resource", "op": "prefix", "value": "staging" }
+    },
+    {
+      "id": "allow-reads",
+      "effect": "allow",
+      "tools": ["http.*", "file.read"],
+      "agents": [],
+      "condition": null
+    },
+    {
+      "id": "allow-demo-shell",
+      "effect": "allow",
+      "tools": ["shell.*"],
+      "agents": ["demo-agent"],
+      "condition": null
+    }
+  ]
+}

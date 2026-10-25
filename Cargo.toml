@@ -1,0 +1,32 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/bulkhead-core",
+    "crates/bulkhead-policy",
+    "crates/bulkhead-identity",
+    "crates/bulkhead-ledger",
+    "crates/bulkhead-audit",
+    "crates/bulkhead-providers",
+    "crates/bulkhead-gateway",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "Bulkhead — the governance plane for AI agent fleets"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hmac = "0.12"
+sha2 = "0.10"
+base64 = "0.22"
+tiny_http = "0.12"
+ureq = { version = "2", features = ["json"] }
+bulkhead-core = { path = "crates/bulkhead-core" }
+bulkhead-policy = { path = "crates/bulkhead-policy" }
+bulkhead-identity = { path = "crates/bulkhead-identity" }
+bulkhead-ledger = { path = "crates/bulkhead-ledger" }
+bulkhead-audit = { path = "crates/bulkhead-audit" }
+bulkhead-providers = { path = "crates/bulkhead-providers" }

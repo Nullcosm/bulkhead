@@ -1,0 +1,13 @@
+[package]
+name = "bulkhead-identity"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Agent identity issuance and verification for Bulkhead"
+
+[dependencies]
+bulkhead-core = { workspace = true }
+serde_json = { workspace = true }
+hmac = { workspace = true }
+sha2 = { workspace = true }
+base64 = { workspace = true }

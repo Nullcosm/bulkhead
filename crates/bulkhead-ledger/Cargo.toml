@@ -1,0 +1,11 @@
+[package]
+name = "bulkhead-ledger"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Per-agent budget metering and the kill switch for Bulkhead"
+
+[dependencies]
+bulkhead-core = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

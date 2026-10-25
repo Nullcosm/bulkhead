@@ -1,0 +1,20 @@
+[package]
+name = "bulkhead-gateway"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "The Bulkhead gateway binary: one choke point for all agent actions"
+
+[dependencies]
+bulkhead-core = { workspace = true }
+bulkhead-policy = { workspace = true }
+bulkhead-identity = { workspace = true }
+bulkhead-ledger = { workspace = true }
+bulkhead-audit = { workspace = true }
+bulkhead-providers = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tiny_http = { workspace = true }
+
+[dev-dependencies]
+ureq = { workspace = true }

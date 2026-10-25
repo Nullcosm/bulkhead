@@ -1,0 +1,12 @@
+/target
+**/__pycache__/
+*.pyc
+/node_modules/
+audit.jsonl
+*.log
+.DS_Store
+.cargo-home/
+
+# Internal-only planning docs (never commit)
+INTERNAL-*.md
+BRANDING.md
